@@ -18,7 +18,7 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-	df= pd.read_csv("data/gender.csv")
+	df= pd.read_csv("data/bengali_names.csv")
 	# Features and Labels
 	df_X = df.name
 	df_Y = df.sex
