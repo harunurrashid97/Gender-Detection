@@ -20,7 +20,7 @@ def index():
 def predict():
 	df= pd.read_csv("data/bengali_names.csv")
 	# Features and Labels
-	df_X = df.name
+	df_X = df.Name
 	df_Y = df.sex
     
     # Vectorization
