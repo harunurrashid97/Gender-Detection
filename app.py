@@ -29,8 +29,8 @@ def predict():
 	X = cv.fit_transform(corpus) 
 	
 	# Loading our ML Model
-	naivebayes_model = open("models/naivebayesgendermodel.pkl","rb")
-	clf = joblib.load(naivebayes_model)
+	decisiontree_model = open("models/decisiontreemodel.pkl","rb")
+	clf = joblib.load(decisiontree_model)
 
 	# Receives the input query from form
 	if request.method == 'POST':
