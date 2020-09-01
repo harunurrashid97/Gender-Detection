@@ -5,7 +5,7 @@ import numpy as np
 
 # ML Packages
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.externals import joblib
+import joblib
 
 
 app = Flask(__name__)
